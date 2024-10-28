@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -9,16 +8,29 @@
 </head>
 <body>
 
-    <section id="task-page" class="hidden">
+    <section id="task-page">
         <header>
             <h1>Adicionar Tarefas</h1>
-            <p id="user-email"</p>
+            <p id="user-email"></p> 
         </header>
-        <div class="task-box">
+        
+        <div class="glass-box"> 
             <form id="task-form">
-                <label for="task">Tarefa:</label>
-                <input type="text" id="task" placeholder="Digite sua tarefa" required><br><br>
-                <button type="submit">Adicionar Tarefa</button>
+                <label for="task-title">Título da Tarefa:</label>
+                <input type="text" id="task-title" placeholder="Digite o título da tarefa" required><br><br>
+                
+                <label for="task-desc">Descrição (opcional):</label>
+                <textarea id="task-desc" placeholder="Descreva a tarefa (opcional)"></textarea><br><br>
+                
+                <label for="task-date">Data:</label>
+                <input type="date" id="task-date" required><br><br>
+                
+                <label for="task-time">Hora:</label>
+                <input type="time" id="task-time" required><br><br>
+                
+            
+                <button type="submit" class="btn-add-task">Adicionar Tarefa</button>
+
             </form>
         </div>
     </section>
@@ -26,4 +38,6 @@
     <script src="easy.js"></script>
 </body>
 </html>
+
+
 
